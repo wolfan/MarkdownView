@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "MarkdownView",
+	"description": "view Mardown file.",
+	"version": "0.0.1",
+	"permissions": ["tabs"],
+	"content_scripts": [{
+		"css": ["core/spectre.min.css"],
+		"js": ["core/showdown.min.js","core/t.js","app.js"],
+		"matches": ["http://*/*.md","https://*/*.md","http://*/*.MD","https://*/*.MD","file://*/*.md","file://*/*.MD","file://*/*.markdown"]
+	}],
+	"icons":{
+		"16":"imager/mv.png",
+		"48":"imager/mv.png",
+		"128":"imager/mv.png"
+	}
+}
